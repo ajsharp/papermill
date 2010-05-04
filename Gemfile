@@ -1,3 +1,4 @@
+source :gemcutter
 
 gem 'bundler', '>= 0.9.25'
 gem 'sinatra', '>= 1.0'
