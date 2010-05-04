@@ -1,6 +1,6 @@
 %tr
-  %td=display_time log['request_time']
-  %td=log['status'].to_i
+  %td=display_time log['request_time'] unless log['request_time'].nil?
+  %td=log['status'].to_i unless log['status'].nil?
   %td=log['request_uri']
   %td=log['user']['email']
   %td=log['user']['roles']
