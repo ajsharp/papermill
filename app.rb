@@ -1,6 +1,6 @@
 
 Bunyan::Logger.configure do |config|
-  config.database    'optimis_bunyan_logger'
+  config.database    'bunyan_logger'
   config.collection  'development_log'
 end
 
