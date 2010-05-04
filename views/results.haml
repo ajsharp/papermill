@@ -7,5 +7,5 @@
     %th Email
     %th Roles
 
-  -@logs.to_a.reverse.each do |log|
+  -@logs.each do |log|
     =haml :log, :layout => false, :locals => { :log => log }
