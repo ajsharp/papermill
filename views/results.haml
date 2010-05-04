@@ -1,0 +1,11 @@
+%h3="Results #{@logs.count}"
+%table
+  %tr
+    %th Request Time
+    %th Status
+    %th URI
+    %th Email
+    %th Roles
+
+  -@logs.to_a.reverse.each do |log|
+    =haml :log, :layout => false, :locals => { :log => log }

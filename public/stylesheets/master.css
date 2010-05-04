@@ -1,0 +1,18 @@
+body {
+  font-family: helvetica;
+}
+
+.no-show {
+  display: none;
+}
+
+#search-results table th {
+  border-bottom: 3px solid #999;
+}
+
+#search-results table tr td {
+  padding: 5px 10px;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
