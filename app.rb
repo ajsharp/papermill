@@ -28,7 +28,7 @@ class Papermill < Sinatra::Base
   end
 
   get '/search' do
-    @logs = Bunyan::Logger.find(@query_params).sort('$natural', -1)
+    @logs = Bunyan::Logger.find(@query_params).sort('$natural', -1).limit(100)
     haml :results, :layout => false
   end
 end
