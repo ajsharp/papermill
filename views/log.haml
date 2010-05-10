@@ -1,6 +1,8 @@
 %tr
   %td=display_time log['request_time'] unless log['request_time'].nil?
   %td=log['status'].to_i unless log['status'].nil?
+  %td=log['request_method']
+  %td=log['controller_action']
   %td=log['request_uri']
   %td=log['user']['email'] if log['user']
   %td=log['user']['roles'] if log['user']
