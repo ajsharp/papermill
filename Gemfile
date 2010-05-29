@@ -3,6 +3,7 @@ source :gemcutter
 # gem 'bundler', '>= 0.9.10'
 gem 'sinatra', '>= 1.0'
 gem 'haml',    '>= 2.2.24'
+gem 'bson_ext'
 gem 'bunyan',  '>= 0.3.0'
 
 group :development do

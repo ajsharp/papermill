@@ -4,6 +4,10 @@ dependencies:
     group: 
     - :development
     version: ">= 0"
+  bson_ext: 
+    group: 
+    - :default
+    version: ">= 0"
   haml: 
     group: 
     - :default
@@ -24,10 +28,6 @@ dependencies:
     group: 
     - :default
     version: ">= 1.0"
-  bundler: 
-    group: 
-    - :default
-    version: ">= 0.9.10"
   rack-test: 
     group: 
     - :test
@@ -39,43 +39,41 @@ dependencies:
     - :development
     version: ">= 0"
 specs: 
-- daemons: 
-    version: 1.0.10
-- linecache: 
-    version: "0.43"
-- ruby-debug-base: 
-    version: 0.10.3
-- eventmachine: 
-    version: 0.12.10
-- rack: 
-    version: 1.1.0
-- shotgun: 
-    version: "0.6"
-- rack-test: 
-    version: 0.5.3
-- thin: 
-    version: 1.2.7
 - bson: 
-    version: "1.0"
-- rspec: 
-    version: 1.3.0
-- bundler: 
-    version: 0.9.24
-- haml: 
-    version: 2.2.24
-- sinatra: 
-    version: "1.0"
-- columnize: 
-    version: 0.3.1
+    version: 1.0.1
 - bson_ext: 
-    version: "1.0"
+    version: 1.0.1
 - mongo: 
-    version: "1.0"
+    version: 1.0.1
 - bunyan: 
     version: 0.3.0
+- columnize: 
+    version: 0.3.1
+- daemons: 
+    version: 1.0.10
+- eventmachine: 
+    version: 0.12.10
+- haml: 
+    version: 3.0.6
+- linecache: 
+    version: "0.43"
+- rack: 
+    version: 1.1.0
+- rack-test: 
+    version: 0.5.4
+- rspec: 
+    version: 1.3.0
+- ruby-debug-base: 
+    version: 0.10.3
 - ruby-debug: 
     version: 0.10.3
-hash: 92742b362dfd99d87cd128962ce94f195f92d218
+- shotgun: 
+    version: "0.6"
+- sinatra: 
+    version: "1.0"
+- thin: 
+    version: 1.2.7
+hash: b20ea68d73a3f38b93376bc51c4ae4ed544b293d
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
