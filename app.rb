@@ -1,8 +1,4 @@
-
-Bunyan::Logger.configure do |config|
-  config.database    'bunyan_logger'
-  config.collection  'development_log'
-end
+require File.join(File.expand_path(File.dirname(__FILE__)), 'config', 'bunyan.rb')
 
 class Papermill < Sinatra::Base
   set :haml, {:format => :html5 }
