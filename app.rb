@@ -1,6 +1,7 @@
 require File.join(File.expand_path(File.dirname(__FILE__)), 'config', 'bunyan.rb')
 
 class Papermill < Sinatra::Base
+  INTEGER_SEARCH_FIELDS = ['status']
   set :haml, {:format => :html5 }
   set :logging, true
   set :public, File.dirname(__FILE__) + '/public'
@@ -14,7 +15,7 @@ class Papermill < Sinatra::Base
   before do
     @query_params = {}
     params['search-fields'].each_with_index do |item, index|
-      @query_params[item] = /#{params['search-values'][index]}/
+      @query_params[item] = build_query_for_field(item, params['search-values'][index])
     end unless params.empty?
     @query_params
   end
@@ -27,5 +28,14 @@ class Papermill < Sinatra::Base
     @logs = Bunyan::Logger.find(@query_params).sort('$natural', -1).limit(100)
     haml :results, :layout => false
   end
+
+  protected
+    def build_query_for_field(key, value)
+      exact_search_field?(key) ? value.to_i : /#{value}/
+    end
+
+    def exact_search_field?(field)
+      INTEGER_SEARCH_FIELDS.include? field
+    end
 end
 
