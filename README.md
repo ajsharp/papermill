@@ -12,3 +12,13 @@ configuration file to hook papermill up to MongoDB through Bunyan.
 # Configuration
 Copy `config/bunyan.example.rb` to `config/bunyan.rb` and change the settings
 to match your MongoDB configuration.
+
+# Features
+
+* Web-based interface for searching, querying and filtering bunyan logs
+* Statistics with pretty graphs (using raphaeljs)
+
+# TODO
+
+* Allow data export in json format
+

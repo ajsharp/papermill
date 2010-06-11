@@ -1,2 +1,3 @@
 .bundle
 config/bunyan.rb
+tmp/restart.txt
