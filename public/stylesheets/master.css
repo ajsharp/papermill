@@ -1,4 +1,7 @@
-/* @override http://localhost:9393/stylesheets/master.css */
+/* @override 
+	http://localhost:9393/stylesheets/master.css
+	http://localhost:3000/stylesheets/master.css
+*/
 
 body {
   font-family: helvetica;
@@ -24,12 +27,12 @@ img {
 }
 
 #masthead {
-  overflow: auto;
+  
 }
 
 #masthead #search-form {
   width: 400px;
-  float: left;
+  margin-bottom: 50px;
 }
 
 #masthead #stats {
