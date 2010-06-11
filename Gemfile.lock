@@ -34,11 +34,19 @@ dependencies:
     version: ">= 0.5.3"
     require: 
     - rack/test
+  activesupport: 
+    group: 
+    - :default
+    version: = 2.3.5
+    require: 
+    - active_support
   shotgun: 
     group: 
     - :development
     version: ">= 0"
 specs: 
+- activesupport: 
+    version: 2.3.5
 - bson: 
     version: 1.0.1
 - bson_ext: 
@@ -73,7 +81,7 @@ specs:
     version: "1.0"
 - thin: 
     version: 1.2.7
-hash: b20ea68d73a3f38b93376bc51c4ae4ed544b293d
+hash: 021eb911d5925fac6af34b0116b7612a85318663
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

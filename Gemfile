@@ -1,6 +1,6 @@
 source :gemcutter
 
-# gem 'bundler', '>= 0.9.10'
+gem 'activesupport', '2.3.5', :require => 'active_support'
 gem 'sinatra', '>= 1.0'
 gem 'haml',    '>= 2.2.24'
 gem 'bson_ext'
