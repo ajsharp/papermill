@@ -1,10 +1,12 @@
-%form{:action => '/search', :method => 'get', :id => 'papermill-search'}
-  #search-params
-    .search-param=haml :search_param
-
-  %p
-    %a{:class => 'add-search-param', :href => '#'}add
-
-  %input{:type => 'submit', :value => 'Search', :name => 'commit'}
-  %img{:src => '/images/ajax-loader.gif', :alt => 'Loading...', :class => 'no-show', :id => 'ajax-loader'}
-#hidden-param.no-show=haml :search_param
+#search-form
+  %h4 Search Parameters
+  %form{:action => '/search', :method => 'get', :id => 'papermill-search'}
+    #search-params
+      .search-param=haml :search_param
+  
+    %p
+      %a{:class => 'add-search-param', :href => '#'}add
+  
+    %input{:type => 'submit', :value => 'Search', :name => 'commit'}
+    %img{:src => '/images/ajax-loader.gif', :alt => 'Loading...', :class => 'no-show ajax-loader'}
+  #hidden-param.no-show=haml :search_param

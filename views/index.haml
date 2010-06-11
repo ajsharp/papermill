@@ -3,13 +3,18 @@
   %head
     %title Papermill
     %script{:type => 'text/javascript', :src => '/javascripts/jquery-1.4.2.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/raphael.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/g.raphael.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/g.pie.js'}
     %script{:type => 'text/javascript', :src => '/javascripts/papermill.js'}
     %link{:rel => 'stylesheet', :href => '/stylesheets/master.css', :type => 'text/css'}
 
   %body
-    %h1 Welcome to Papermill
+    %h1 Papermill
 
-    =haml :search_form
+    #masthead
+      =haml :search_form
+      =haml :stats
     #search-results
       -unless @logs.nil?
         =haml :results

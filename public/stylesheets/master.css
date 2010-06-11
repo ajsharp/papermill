@@ -1,5 +1,11 @@
+/* @override http://localhost:9393/stylesheets/master.css */
+
 body {
   font-family: helvetica;
+}
+
+img {
+ border: 0;
 }
 
 .no-show {
@@ -15,4 +21,46 @@ body {
   margin: 0;
   text-align: center;
   border-bottom: 1px solid #ccc;
+}
+
+#masthead {
+  overflow: auto;
+}
+
+#masthead #search-form {
+  width: 400px;
+  float: left;
+}
+
+#masthead #stats {
+  float: left;
+  width: 600px; 
+  position: relative;
+  position: absolute;
+  left: 500px;
+  top: -70px;
+}
+
+#stats #refresh-link {
+  display: inline;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+}
+
+#stats #graph {
+  /*margin-top: -80px;   the svg tag has some weird default style properties*/ 
+}
+
+#search-results {
+  font-size: 80%;
+}
+
+#search-results table tr:nth-of-type(even) {
+  background-color: #e4e4e4;
+  border: 0;
+}
+
+#search-results table tr td {
+  border: 0;
 }
