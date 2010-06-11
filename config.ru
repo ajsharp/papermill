@@ -10,5 +10,5 @@ end
 
 Bundler.require :default, ENV['RACK_ENV']
 
-require 'app'
-run Papermill
+require File.join(File.expand_path(File.dirname(__FILE__)), 'lib', 'papermill')
+run Papermill.app
